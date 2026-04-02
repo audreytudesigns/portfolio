@@ -162,11 +162,11 @@ a:hover {
   left:60vw;
 
 
-  font-size: 15vw;
+  font-size: 14vw;
   line-height: 1;
   text-align: left;
   top:-2vw;
-  left:55vw;
+  left:60vw;
 
     animation-range: 0% 50%;
     transform-origin: center;
@@ -176,7 +176,7 @@ a:hover {
 .special{
     position:relative;
     top:6vw;
-    left:-5vw;
+    left:-6vw;
 
     /* font-family: "Quicksand", sans-serif;
     font-weight:500; */
@@ -185,7 +185,7 @@ a:hover {
     font-weight: 400;
 
     font-style:normal;
-    font-size: 15vw;
+    font-size: 14vw;
     line-height: 1;
 
     animation-range: 0% 50%;

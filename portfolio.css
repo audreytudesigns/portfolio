@@ -153,13 +153,13 @@ a:hover {
 .regular{
   position:relative;
 
-  font-family: "Quicksand", sans-serif;
+  /* font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 300; */
  
-   /*font-family: "Montserrat Alternates", sans-serif;
+   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 100;
-  left:60vw;*/
+  left:60vw;
 
 
   font-size: 15vw;
@@ -178,11 +178,11 @@ a:hover {
     top:6vw;
     left:-5vw;
 
-    font-family: "Quicksand", sans-serif;
-    font-weight:500;
+    /* font-family: "Quicksand", sans-serif;
+    font-weight:500; */
 
-     /*font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;*/
+     font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
 
     font-style:normal;
     font-size: 15vw;

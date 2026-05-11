@@ -153,20 +153,20 @@ a:hover {
 .regular{
   position:relative;
 
-  /* font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300; */
+  font-weight: 300;
  
-   font-family: "Montserrat Alternates", sans-serif;
+   /*font-family: "Montserrat Alternates", sans-serif;
   font-weight: 100;
-  left:60vw;
+  left:60vw;*/
 
 
-  font-size: 14vw;
+  font-size: 15vw;
   line-height: 1;
   text-align: left;
   top:-2vw;
-  left:60vw;
+  left:55vw;
 
     animation-range: 0% 50%;
     transform-origin: center;
@@ -176,16 +176,16 @@ a:hover {
 .special{
     position:relative;
     top:6vw;
-    left:-6vw;
+    left:-5vw;
 
-    /* font-family: "Quicksand", sans-serif;
-    font-weight:500; */
+    font-family: "Quicksand", sans-serif;
+    font-weight:500;
 
-     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
+     /*font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;*/
 
     font-style:normal;
-    font-size: 14vw;
+    font-size: 15vw;
     line-height: 1;
 
     animation-range: 0% 50%;
@@ -376,7 +376,7 @@ footer,
 h1 {
   position:static;
   font-family: "Quicksand", sans-serif;
-  font-size: 3.5em;
+  font-size: 3em;
   line-height: 2;
   left:;
   margin-bottom: 4vw;
@@ -540,6 +540,7 @@ h3 {
 
 
 .img-grid{
+    width:60vw;
     position:relative;
     margin-bottom: 6vw;
 }
@@ -988,7 +989,7 @@ border-radius: 20px;
 
 
 
-
+hb
 
 
 

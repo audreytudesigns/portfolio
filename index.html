@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Audrey's Portfolio</title>
     <link rel="icon" type="image/png" href="assets/home/monogram_logo.png">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
     
 
-    <!-- quicksand -->
+    <!-- solway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
 
     <!-- montserrat alternates -->
@@ -21,113 +21,100 @@
 
 </head>
 <body>
-     
-    <div class="navigation">
-        <div class="bg">
-        </div>
-         <div class="navi">
-        <a href="index.html"> <strong> AUDREY TU </strong> </a> </div>
 
-        <div class="nav">
-        <a href="index.html#image-grid"> WORKS</a> 
-        <a href="about.html"> ABOUT</a> 
-        <a href="https://drive.google.com/file/d/1YaVoLTTXzumBfD1Mn7A7pzxBnCVAmI4-/view?usp=sharing" target="_blank" rel="noopener noreferrer"> RESUME</a> </div>
-    </div>
-    
-    <div class="intro">
-        <div class="special">AUDREY</div> 
-        <div class="regular"> TU</div>
-        <div class="blurb"> A designer that tells stories, sparks curiosity, and leads with adventure. </div>
-
-        <div class="based">
-            <!-- <span class="des"> DESIGNING IN </span> -->
-            <span class="location"> SAN FRANCISCO, CA &nbsp;&nbsp;& LOS ANGELES, CA </span>
-        </div>
-    </div>
-
-    <div class="line-two"></div>
-
-    <div class="section"> 
-        <h3> RECENT WORKS </h3>
-        <span class="section-caption"> I am able to create in a wide variety of design projects from identity and brand design, campaign posters, web design, book design, etc. I design with fun and functionality at the core every of my project. </span>
-    </div>
-
-
-    <div id="image-grid">
-        <div class="sw"> <a href="teaandkin.html">
-            <img  src="assets/home/tea.jpg">
-            <div class="text"> tea & kin | Packaging Design </div>
-        </a></div>
-
-        <!-- <div class="sw"> <a href="postcard.html">
-            <img  src="assets/home/postcard.jpg">
-            <div class="text"> Design Manifesto | Postcard Design </div>
-        </a></div> -->
-
-        <div class="sw"> <a href="socialmedia.html">
-            <img  src="assets/home/socialmedia.jpg">
-            <div class="text"> CCA Communication Design | Social Media Campaigns </div>
-        </a></div>
-
-        <div class="sw"> <a href="hyper.html">
-            <img  src="assets/home/hyper.jpg">
-            <div class="text"> HYPER! | Identity System </div>
-        </a></div>
-        
-        <div class="sw"> <a href="fortmason.html">
-            <img  src="assets/home/fortmason.jpg">
-            <div class="text"> Fort Mason Night Market | Identity System </div>
-        </a></div>
-
-        <div class="sw"><a href="trunksandleaves.html">
-            <img src="assets/home/tandleaves.jpg">
-            <div class="text"> Trunks & Leaves | Identity Design </div>
-        </a></div>
-
-        <div class="sw">
-            <a href="dyk.html">
-                <div class="text"> Did You Know? | Campaign Design </div>
-                <img src="assets/home/dyk.jpg">
-        </a></div>
-
-        <div class="sw">
-            <a href="book.html">
-                <div class="text"> Stories of Those on Cabrillo Street | Book Design </div>
-                <img src="assets/home/cabrillost.jpg"></a>
-        </div>
-
-        <div class="sw">
-            <a href="heiseiera.html">
-                 <div class="text"> Heisei: The Era | Web Design </div>
-                 <img src="assets/home/heisei.jpg">
-            </a>
-        </div>
-
-        <div class="sw">
-            <a href="28th-ave.html">
-                 <div class="text"> 28th Ave | Album Cover Design </div>
-                 <img src="assets/album/albummockup.jpg"></a>
-        </div>
-
-    </div>
-
-   <footer>
-     <a href="https://www.instagram.com/aud_02.jpg/" class="icon">
-        <img src="assets/home/ig.png" class="icon-default">
-        <img src="assets/home/ig-blue.png" class="icon-hover">
-    </a> &nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/audreytu2" class="icon">
-        <img src="assets/home/in.png" class="icon-default">
-    <img src="assets/home/in-blue.png" class="icon-hover">
-    </a> &nbsp;&nbsp;
-    <a href="mailto:audreytudesigns@gmail.com" class="icon">
-        <img src="assets/home/gmail.png" class="icon-default"> 
-        <img src="assets/home/gmail-blue.png" class="icon-hover">
-    </a>
-        <br>
-        © 2026 Audrey Tu. All Rights Reserved.
-   </footer> 
+<div class="navigation">
+  <div class="bg"></div>
+  <div class="navi"><a href="index.html"><img src="assets/home/monogram_logo.png"></a></div>
+  <ul class="nav-links nav">
+    <li class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        contacts
+      </button>
+      <ul class="dropdown-menu" id="contactsMenu">
+        <li><a href="mailto:audreytudesigns@gmail.com">email</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="">linkedIn</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="https://drive.google.com/file/d/1YaVoLTTXzumBfD1Mn7A7pzxBnCVAmI4-/view?usp=sharing" target="_blank" rel="noopener noreferrer">résumé</a></li>
+  </ul>
 </div>
+
+
+
+     <div class="rectangle"></div>
+
+     <div class="intro fade-in"> Hi! I'm Audrey Tu, a designer that tells stories, sparks curiosity, and leads with adventure. ⋆˚꩜｡ </div>
+
+
+
+
+    <div class="projects fade-in">
+    <h1> projects </h1> <br>
+      <a href="nha.html"> <p class="project-item" data-index="0"> <strong>01 </strong>&nbsp;  nhá kitchen</p>
+    <!-- <hr> -->
+      <a href="teaandkin.html"> <p class="project-item" data-index="1"> <strong>02 </strong>&nbsp; tea & kin</p> </a>
+    <!-- <hr> -->
+      <a href="hyper.html"> <p class="project-item" data-index="2"> <strong>03 </strong>&nbsp; HYPER-!</p> </a>
+    <!-- <hr> -->
+      <a href="trunksandleaves.html"> <p class="project-item" data-index="3"><strong>04 </strong>&nbsp; Trunks & Leaves </p> </a>
+    <!-- <hr> -->
+      <a href="didyouknow.html"> <p class="project-item" data-index="4"><strong>05 </strong>&nbsp; DID YOU KNOW? </p> </a>
+    <!-- <hr> -->
+      <a href="cabrillost.html"> <p class="project-item" data-index="5"><strong>06</strong>&nbsp; <i>Cabrillo Street</i> </p></a>
+    <!-- <hr> -->
+      <a href="heiseiera.html"> <p class="project-item" data-index="6"><strong>07</strong>&nbsp; Heisei the Era </p></a>
+    <!-- <hr> -->
+      <a href="28th-ave.html"> <p class="project-item" data-index="7"><strong>08</strong>&nbsp; 28th Ave. </p></a>
+    <!-- <hr> -->
+
+
+
+    </div>
+
+
+    <div class="image-container fade-in">
+      <img src="assets/home/nha.gif" class="slide active">
+      <img src="assets/tea/turnaround.gif" class="slide">
+      <img src="assets/home/hyper.gif" class="slide">
+      <img src="assets/home/tandleaves.jpg" class="slide active">
+      <img src="assets/dyk/campaign-busstop.jpg" class="slide full-slide">
+      <img src="assets/home/cabrillost.png" class="slide">
+      <img src="assets/home/heisei.jpg" class="slide">
+      <img src="assets/album/vinyl.jpg" class="slide full-slide active">
+    </div>
+
+ <!-- <div class="image-container">
+  <div class="slider">
+    <img src="assets/home/nha.jpg" class="slide">
+      <img src="assets/tea/tea1.jpg" class="slide">
+      <img src="assets/home/hyper.jpg" class="slide">
+      <img src="assets/home/tandleaves.jpg" class="slide">
+      <img src="assets/home/dyk.jpg" class="slide">
+      <img src="assets/home/cabrillost.jpg" class="slide">
+      <img src="assets/home/heisei.jpg" class="slide">
+      <img src="assets/album/albummockup.jpg" class="slide">
+  </div>
+</div> -->
+
+
+
+
+
+
+
+     <div class="copyright-home"> © 2026 Audrey Tu. All Rights Reserved. </div>
+
+</body>
+
+
+<script src="portfolio.js"></script>
+
+
+
+
+    
 
     
 

@@ -1246,6 +1246,7 @@ h1 {
   .intro {
     margin-top: 3em;
     margin-left: 4vw;
+    opacity:0;
   }
 
   .based{

@@ -933,7 +933,14 @@ h1 {
 .pg16{ height:125vw; } /*
 .pg17{ height:107vw; }*/
 
-
+.n1{ left:0; top:170vw;}
+.n2 { top:50vw; }
+.n3{ top:50vw; }
+.n4{ top:160vw; }
+.n5{ top:140vw;}
+.n6{ top:175vw;}
+.n7{ top:230vw;}
+  
 .tk1{ left:5px; top:0vw;}
 .tk1-1{ left:5px; top:0vw;}
 .tk2 { width:50%; left:40px; top:49vw; }

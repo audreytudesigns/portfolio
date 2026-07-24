@@ -892,7 +892,7 @@ h1 {
 
 
 .project-info{ position: relative; }
-.project-layout{position: relative; top:30vw}
+.project-layout{position: relative; top:30vw;}
 .rectangle { opacity: 0 }
 
 .copyright{ opacity:0; position: relative; top:150em }

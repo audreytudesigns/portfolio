@@ -1,6 +1,8 @@
 body { overflow-x:hidden; margin:20px; padding-bottom: 20px;}
 
-
+.menu-btn{
+    display:none;
+}
 .navigation {
   position: fixed;
   top: 0;
@@ -53,148 +55,32 @@ body { overflow-x:hidden; margin:20px; padding-bottom: 20px;}
   padding: 1rem 2vw;
   color: black;
   z-index:2;
-  word-spacing: 5em;
 }
-
 /* LINKS */
-.nav a,
-.dropdown-btn {
-  text-decoration: none;
-  color: black;
-  font-family: "Solway", serif;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-}
 
 /* DROPDOWN */
-.dropdown {
-  position: relative;
-}
+.dropdown { position: relative; }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem 0;
-
-  background: white;
-  border: 1px solid #ddd;
-  min-width: 160px;
+    position:absolute; top:100%; right:0;
+    list-style:none;
+    padding:0; margin:1rem 0 0;
+    width:max-content;
+    max-height:0; overflow:hidden;
+    transition:max-height .3s ease; 
 }
+.dropdown-menu.open { max-height:200px; }
+.dropdown-menu li { padding:.5rem 0; }
 
-.dropdown-menu li {
-  padding: 0.5rem 1rem;
-}
-
-.dropdown-menu li a {
-  color: black;
-  display: block;
-}
-
-/*.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}*/
-
-
-
-/*NAVIGATION*/
-
-/*  .navigation {
-  position: fixed;
-  top: 5px; left: 0; z-index: 1000;
-  width: 100vw;
-  padding: 1rem 2vw;
-
-  font-family: "Solway", serif; font-weight: 400; font-style: normal;
-  font-size: 1.2em; line-height:1em;
-  color: black;
-  height:2.3vw;
-}
-.bg{
-    position:fixed;
-    background-color:white;
-    width:100vw;
-    height:3rem;
-    top:0;
-    left:0;
-}
-
-.navi{
-  position: fixed;
-  top: 0;
-  left: 15px;
-  padding: 1rem 2vw;
-  color: black;
-  z-index:2;
-}
-.navi img{ height:35px }
-.nav{
-  position: fixed;
-  top: 0;
-  right: 17px;
-  padding: 1rem 2vw;
-  color: black;
-  z-index:2;
-  word-spacing: 5em;
-}
-
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a,
 .dropdown-btn {
-  text-decoration: none;
-  color: black;
-  font-family: sans-serif;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
+    display:inline-block; width:auto;
+    padding:0;margin:0;border:none;background:none;
+    font-family:"Solway", serif;font-size:1em;line-height:1em;
+    text-align:center;
 }
 
-.dropdown {
-  position: relative;
-}
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
 
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem 0;
-
-  background: white;
-  border: 1px solid #ddd;
-  min-width: 160px;
-}
-
-.dropdown-menu li {
-  padding: 0.5rem 1rem;
-}
-
-.dropdown-menu li a {
-  color: black;
-  display: block;
-}*/
 
 
 
@@ -231,7 +117,8 @@ h1 {
 .intro{ 
   font-family: "Solway", serif; font-weight:400; font-style: normal;
   font-size: 1.2em; line-height: ;
-  position:absolute; top:7vw; left:3em; width:20vw }
+  position:absolute; top:7vw; left:3em; width:20vw; 
+  margin-bottom:7vw;}
 
 
 
@@ -294,6 +181,44 @@ h1 {
 
 
 
+.image-grid {display:none; }
+.sw{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom:13vw;
+}
+.sw img{
+    position:relative;
+    width:100%;
+    display:inline-block;
+    cursor:pointer;
+
+}
+.text{
+  font-family: "Solway", serif;
+  font-size: 1.5em;
+  line-height: 1;
+
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+
 
 
 
@@ -342,6 +267,10 @@ h1 {
 
 
 
+
+
+
+
 /*page flow*/
 .project-layout{}
 
@@ -377,7 +306,7 @@ h1 {
    padding-bottom: 4vw;
 }
 
-/*navigation within page flow*/
+/*navigation in pages*/
 .navigating{ position:relative;width:100% }
 .back{ 
   font-family: "Solway", sans-serif;
@@ -603,99 +532,6 @@ footer img{ width:2em; }
 
 
 
-
-
-
-
-
-
-
-/*@media (max-width: 800px) {
-
-.navigation {  font-size: 1em; }
-.navi{ top: -2vw; }
-.navi img{ height:30px }
-.nav{ left: 120px; word-spacing: 10vw; }
-
-
-
-
-
-
-
-h1 {
-  font-size: 1.4em; line-height: ; 
-}
-.intro{ 
-  font-size: 0.7em; line-height: ;
-  position:absolute; top:90vw; left:3em; width:50vw } 
-.image-container { left:0; top: 10vw; width: 100vw; }
-
-.projects{
-    bottom:5em;
-    font-family: "Solway", serif; font-weight:300; font-style:normal;
-    font-size: 1em;
-    line-height: 1em;
-    position: absolute;
-    left: 2em;
-    width: 25em;
-}
-
-
-
-
-/*SIDE BAR*/
-/*
-.project-info{
-    z-index: 100;
-    position: fixed;
-    width: 3em;
-    height: 100vw;
-}
-
-.rectangle {
-    position: absolute;
-    left: -20px;
-    top: -10px;
-    width: 30em;
-    height: 110vh;
-    background-color: white;
-}
-
-
-.title {
-   position:relative;
-   width:300px;
-   margin-top:7rem;
-   left:20px;
-  
-   line-height: 1;
-}
-
-.overview {
-    font-family: "Solway", serif; font-weight:300; font-style:normal;
-    font-size: 1em;
-    line-height: 1.6em;
-    position: absolute;
-    left: 20px;
-    width: 80vw;
-    margin
-}
-
-.overview-section{ font-weight:500; margin-top: 2em; }
-.overview-info{ font-weight:300; margin-top: 0.5em;
-}
-
-.copyright{ font-weight:300; font-size:0.7em; margin-top: 2.5em; }
-
-
-
-
-
-
-
-
-
 .project-info{ position: relative; }
 .rectangle { opacity: 0 }
 
@@ -772,14 +608,23 @@ footer img{ width:2em; }
 
 @media (max-width: 60em) {
 body {
-    padding: 2vw;
+    overflow-x:hidden;
   }
 
-  .project-info {
-    position: relative;
-    width: 100%;
-    padding-bottom: 25vw;
-  }
+
+  .projects, .image-container{display:none;}
+  .image-grid {display:block; }
+
+
+
+
+
+.text{
+    font-size: 0.7em;
+    top: 102%;
+    opacity: 100;
+}
+
 
 
   .section-caption {
@@ -793,16 +638,79 @@ body {
 
 
 
+/*NAVIGATION*/
+.dropdown {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+.menu-btn{
+        display:block;
+        position:fixed;
+        top:1rem;
+        right:2rem;
+
+        background:none;
+        border:none;
+        cursor:pointer;
+
+        font-size:2rem;
+        z-index:2000;
+    }
 
 
+    .nav{
 
-.navigation {  font-size: 1em; }
-.navi{ top: -2vw; }
-.navi img{ height:30px }
-.nav{ left: 120px; word-spacing: 10vw; }
+        position:fixed;
+
+        inset:0;
+
+        width:100vw;
+        height:100vh;
+
+        background:white;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        transform:translateX(100%);
+        transition:transform .35s ease;
+
+        z-index:1500;
+    }
 
 
-.page{ position:absolute }
+    .nav.open{
+        transform:translateX(0);
+    }
+
+
+    .nav-links{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:3rem;
+
+        text-align:center;
+
+        font-size:2rem;
+
+        padding:0;
+        margin:0; 
+    }
+
+
+    .dropdown-menu{
+        position:static; border:none; background:none; margin-top:1rem; 
+    }
+    .dropdown-menu li {
+    padding:.5rem 0;
+    text-align:center; }
+
+
 
 
 
@@ -814,8 +722,8 @@ h1 {
 }
 .intro{ 
   font-size: 0.7em; line-height: ;
-  position:absolute; top:90vw; left:3em; width:50vw } 
-.image-container { left:0; top: 10vw; width: 100vw; }
+  position:absolute; top:90vw; left:0em; width:50vw } 
+.image-container { left:-2; top: 10vw; width: 100vw; }
 
 .projects{
     bottom:5em;
@@ -833,17 +741,10 @@ h1 {
 
 /*SIDE BAR*/
 
-.rectangle {
-    position: absolute;
-    left: -20px;
-    top: -10px;
-    width: 30em;
-    height: 110vh;
-    background-color: white;
-}
 
 
-.title { left:5px; }
+
+.title { left:5px; margin-top:4em;}
 
 .overview {
     font-family: "Solway", serif; font-weight:300; font-style:normal;
@@ -881,8 +782,7 @@ h1 {
 
 
 .overview-section{ font-weight:500; margin-top: 2em; }
-.overview-info{ font-weight:300; margin-top: 0.5em;
-}
+.overview-info{ font-weight:300; margin-top: 0.5em; }
 
 
 
@@ -891,12 +791,12 @@ h1 {
 
 
 
-.project-info{ position: relative; }
-.project-layout{position: relative; top:30vw;}
-.rectangle { opacity: 0 }
+.project-info{ position: relative; padding-bottom: 45vw;}
+.project-layout{position: relative; top:10vw}
+.rectangle { display:none; }
 
-.copyright{ opacity:0; position: relative; top:150em }
-.copyright-home{ font-weight:300; font-size:0.7em; bottom: -20px; }
+.copyright{ display:none; position: relative; text-align: center; margin-bottom:1vw; }
+.copyright-home{ font-weight:300; font-size:0.7em; left:0; text-align: center; margin-bottom:1vw;}
 
 
 
@@ -927,22 +827,25 @@ h1 {
 .pg10{ height:150vw; }
 .pg11{ height:200vw; }
 .pg12{ height:30vw; }
-.pg13{ height:15vw; }
 
 .pg14{ height:100vw; }
 .pg15{ height:11vw; } 
 .pg16{ height:125vw; } /*
 .pg17{ height:107vw; }*/
 
+
+
 .n1{ left:0; top:170vw;}
 .n2 { top:50vw; }
 .n3{ top:50vw; }
-.n4{ top:160vw; }
+.n4{ top: 165vw; right: 7vw; width: 35%; }
 .n5{ top:140vw;}
 .n6{ top:175vw;}
-.n7{ top:230vw;}
-  
-.tk1{ left:5px; top:0vw;}
+.n7{ top:230vw; left:5vw;}
+.pg18{ height:290vw; left:0;}
+
+
+.tk1{ left:20px; top:0vw;}
 .tk1-1{ left:5px; top:0vw;}
 .tk2 { width:50%; left:40px; top:49vw; }
 .tk3{ width:40%; right:2vw; top:95vw; }
@@ -1010,6 +913,11 @@ h1 {
   margin-top: 1vw;
   color: black;
   width: 15%;}
+.pg13{ height:15vw; left:0 }
+
+
+
+
 
 
 .tl{top:105vw}

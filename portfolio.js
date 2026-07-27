@@ -77,21 +77,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-function toggleDropdown() {
-  const menu = document.getElementById("contactsMenu");
-  menu.style.display = (menu.style.display === "block") ? "none" : "block";
-}
+// function toggleDropdown() {
+//   const menu = document.getElementById("contactsMenu");
+//   menu.style.display = (menu.style.display === "block") ? "none" : "block";
+// }
 
-// optional: close when clicking outside
-document.addEventListener("click", function (e) {
-  const dropdown = document.querySelector(".dropdown");
-  const menu = document.getElementById("contactsMenu");
+// // optional: close when clicking outside
+// document.addEventListener("click", function (e) {
+//   const dropdown = document.querySelector(".dropdown");
+//   const menu = document.getElementById("contactsMenu");
 
-  if (!dropdown.contains(e.target)) {
-    menu.style.display = "none";
-  }
+//   if (!dropdown.contains(e.target)) {
+//     menu.style.display = "none";
+//   }
+// });
+
+
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", () => {
+
+    nav.classList.toggle("open");
+
+    menuBtn.textContent =
+        nav.classList.contains("open") ? "✕" : "☰";
+
 });
 
+
+document.querySelectorAll(".nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("open");
+        menuBtn.textContent="☰";
+
+    });
+
+});
+
+const contactBtn = document.getElementById("contactBtn");
+const contactsMenu = document.getElementById("contactsMenu");
+
+contactBtn.addEventListener("click", () => {
+    contactsMenu.classList.toggle("open");
+});
 
 
 

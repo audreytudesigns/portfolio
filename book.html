@@ -6,6 +6,7 @@
     <title>Stories of Those on Cabrillo Street</title>
     <link rel="icon" type="image/png" href="assets/home/monogram_logo.png">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
     
 
    <!-- solway -->
@@ -19,14 +20,27 @@
 
 <body>
     <div class="navigation">
-        <div class="bg"></div>
-        <div class="navi">
-        <a href="index.html"> <strong> AUDREY TU </strong> </a> </div>
-        <div class="nav">
-        <a href="portfolio.html#image-grid">contacts</a> 
-        <a href="about.html"> about</a> 
-        <a href="https://drive.google.com/file/d/1YaVoLTTXzumBfD1Mn7A7pzxBnCVAmI4-/view?usp=sharing" target="_blank" rel="noopener noreferrer"> resume</a> </div>
-    </div>
+    <div class="bg"></div>
+    <div class="navi"> <a href="index.html"> <img src="assets/home/monogram_logo.png" alt="Logo"> </a> </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"> ☰ </button>
+
+    <nav class="nav" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="works.html">works</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="https://drive.google.com/file/d/1YaVoLTTXzumBfD1Mn7A7pzxBnCVAmI4-/view?usp=sharing"target="_blank"> résumé</a></li>
+
+        <li class="dropdown">
+          <button class="dropdown-btn" id="contactBtn"> contacts </button>
+              <ul class="dropdown-menu" id="contactsMenu">
+                  <li><a href="mailto:audreytudesigns@gmail.com">email</a></li>
+                  <li><a href="#">instagram</a></li>
+                  <li><a href="#">linkedin</a></li>
+              </ul>
+        </li>
+      </ul>
+    </nav>
+</div>
 
     
 

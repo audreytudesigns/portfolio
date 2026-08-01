@@ -165,7 +165,7 @@ h1 {
 
 
 
-.project-info{ position: relative; height:100vw}
+.project-info{ position: relative; height:150vw}
 .project-layout{position: relative; top:15vw}
 .rectangle { display:none; }
 
@@ -212,7 +212,7 @@ h1 {
 .tk1-1{ left:5px; top:0vw;}
 .tk2 { width:50%; left:-10px; top:50vw; }
 .tk3{ width:40%; right:2vw; top:95vw; }
-.tk4{ width:4%; left:20px; top:85vw; }
+.tk4{ width:40%; left:20px; top:85vw; }
 .tk5{  left:0vw; top:136vw; }
 
 .h1{ top:0vw; }

@@ -212,6 +212,73 @@ h1 {
 
 
 
+#works-grid,
+footer,
+.title,
+.project-layout,
+.about-layout;
+.img-grid {
+    overflow-x: hidden;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 0 10px;
+  margin: 8vw auto 0 auto;
+  width: 100%;
+}
+.works-grid .sw:nth-child(2n){
+  transform: translateY(80px);
+}
+
+.sw2{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding:1vw;
+}
+.sw2 img{
+    position:relative;
+    width:100%;
+    display:inline-block;
+    cursor:pointer;
+}
+.text2{
+  font-family: "Solway", serif;
+  font-size: 1em;
+  line-height: 1;
+
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.sw2:hover .text2{
+    opacity:1;
+}
+.sw2:hover img {
+    opacity:0.2;
+    filter: drop-shadow(5px 5px 10px black);
+  
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -258,6 +325,9 @@ h1 {
 }
 
 .copyright{ font-weight:300; font-size:0.7em; margin-top: 2.5em; }
+.copyright-works{ font-weight:300; font-size:1em; left:0; text-align: center; 
+    margin-bottom:1vw; margin-top:3vw; }
+
 
 
 
@@ -312,7 +382,7 @@ h1 {
   font-family: "Solway", sans-serif;
   font-size:1.2em;
   position: absolute;
-  right:-30px;
+  right:30px;
   margin-top: 1vw;
   color: black;
   width: 20%;}
@@ -371,9 +441,11 @@ h1 {
 .tk1{ left:0; top:7rem;}
 .tk1-1{ left:0; top:0vw;}
 .tk2 { width:50%; left:0vw; top:49vw; }
-.tk3{ width:30vw; right:0vw; top:92vw; }
-.tk4{ width:50%; left:10vw; top:78vw; }
+.tk3{ width: 31vw; left: 30vw; top: 90vw; }
+.tk4{ width: 44%; left: 4vw; top: 75vw; }
 .tk5{  left:0vw; top:125vw; }
+
+
 
 
 .h1{ left:0vw; top:5vw; }
@@ -390,10 +462,10 @@ iframe { position: relative; width: 65vw; height: 36.56vw; }
 .h11{ width:27vw; left:4vw; top:63vw; }
 .h12{ width:27vw; left:35vw; top:63vw; }
 
-.b1 { width:32vw; left:0vw; top:52vw; }
-.b2{ width:32vw; left:34vw; top:52vw; }
-.b3{ width:32vw; left:0vw; top:73vw; }
-.b4{ width:32vw; left:34vw; top:73vw; }
+.b1 { width:31.5vw; left:0vw; top:52vw; }
+.b2{ width:31.5vw; left:33.5vw; top:52vw; }
+.b3{ width:31.5vw; left:0vw; top:73vw; }
+.b4{ width:31.5vw; left:33.5vw; top:73vw; }
 .b5{ width:23vw;left:0vw; top:47vw; }
 .b6{ width:20vw; left:23vw; top:47vw; }
 .b7{ width:22vw; left:43vw; top:50vw; }
